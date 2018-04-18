@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            background-color: #e0e0e0;
+        }
+
+        .grid {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-areas: "header" "name" "content" "footer";
+        }
+
+        .box {
+            color: #000;
+            background-color: #fff;
+            border: 1px solid #000;
+            border-radius: 5px;
+            text-align: center;
+            margin: 20px 30px 10px 30px;
+            font-family: Arial;
+        }
+
+        h2 {
+            font-family: Arial;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #0f271d;
+            height: 50px;
+        }
+
+        .choosename {
+            grid-area: name;
+            padding: 10px 10px;
+        }
+
+        .content {
+            grid-area: content;
+            padding: 10px 10px;
+        }
+
+        #dato {
+            font-size: 13px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="grid wrapper">
+        <div class="header"></div>
+        <div class="box choosename">
+            <h2>Type in your name:</h2><br />
+            <input type="text" placeholder="Name" form="text" name="textview" />
+            <select name="Your name">
+                <option value="aaron">Find your name</option>
+                <option value="abdi" onclick="insert('abdi')">Abdi</option>
+                <option value="abdullah" onclick="insert('Abdullah')">Abdullah</option>
+                <option value="abdi" onclick="insert('Andre')">Andre</option>
+                <option value="benjamin" onclick="insert('Benjamin')">Benjamin</option>
+                <option value="bilal" onclick="insert('Bilal')">Bilal</option>
+                <option value="brage" onclick="insert('Brage')">Brage</option>
+                <option value="carl" onclick="insert('Carl')">Carl</option>
+                <option value="carlos" onclick="insert('Carlos')">Carlos</option>
+                <option value="christer" onclick="insert('Christer')">Christer</option>
+                <option value="colin" onclick="insert('Colin')">Colin</option>
+                <option value="damin" onclick="insert('Damin')">Damin</option>
+                <option value="edin" onclick="insert('Edin')">Edin</option>
+                <option value="hans" onclick="insert('Hans')">Hans</option>
+                <option value="igor" onclick="insert('Igor')">Igor</option>
+                <option value="ivan" onclick="insert('Ivan')">Ivan</option>
+                <option value="jack" onclick="insert('Jack')">Jack</option>
+                <option value="johan" onclick="insert('Johan')">Johan</option>
+                <option value="kamil" onclick="insert('Kamil')">Kamil</option>
+                <option value="kim" onclick="insert('Kim')">Kim</option>
+                <option value="kent" onclick="insert('Kent')">Kent</option>
+                <option value="lasse" onclick="insert('Lasse')">Lasse</option>
+                <option value="laurits" onclick="insert('Laurits')">Laurits</option>
+                <option value="linus" onclick="insert('Linus')">Linus</option>
+                <option value="mahamed" onclick="insert('Mahamed')">Mahamed</option>
+            </select>
+        </div>
+    </div>
+    <div class="box content">
+        <h2>Deposits</h2>
+        <div class="nest date" id="dato">Todays date: 18.04.2018</div><br />
+        Paid social<input id="cb" type="checkbox" /> Shares <input type="number" placeholder="100" name="quantity" min="100" max="20000" />
+    </div>
+
+    <script>
+    </script>
+
+</body>
